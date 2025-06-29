@@ -1,0 +1,3 @@
+/home/devuser/MiniKV/build/CMakeFiles/minikv.dir
+/home/devuser/MiniKV/build/CMakeFiles/edit_cache.dir
+/home/devuser/MiniKV/build/CMakeFiles/rebuild_cache.dir
