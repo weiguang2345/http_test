@@ -1,5 +1,6 @@
-CMakeFiles/minikv.dir/src/main.c.o: /home/devuser/MiniKV/src/main.c \
- /usr/include/stdc-predef.h /usr/include/stdio.h \
+CMakeFiles/minikv.dir/src/http_server.c.o: \
+ /home/devuser/MiniKV/src/http_server.c /usr/include/stdc-predef.h \
+ /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -49,9 +50,35 @@ CMakeFiles/minikv.dir/src/main.c.o: /home/devuser/MiniKV/src/main.c \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h /home/devuser/MiniKV/src/../include/parser.h \
+ /usr/include/strings.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/netinet/in.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
+ /home/devuser/MiniKV/src/../include/http_server.h \
+ /home/devuser/MiniKV/src/../include/storage.h \
+ /home/devuser/MiniKV/src/../include/parser.h \
  /home/devuser/MiniKV/src/../include/engine.h \
  /home/devuser/MiniKV/src/../include/parser.h \
- /home/devuser/MiniKV/src/../include/storage.h \
- /home/devuser/MiniKV/src/../include/storage.h \
- /home/devuser/MiniKV/src/../include/http_server.h
+ /home/devuser/MiniKV/src/../include/api_handler.h

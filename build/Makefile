@@ -129,6 +129,30 @@ minikv/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/build
 .PHONY : minikv/fast
 
+src/api_handler.o: src/api_handler.c.o
+.PHONY : src/api_handler.o
+
+# target to build an object file
+src/api_handler.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/src/api_handler.c.o
+.PHONY : src/api_handler.c.o
+
+src/api_handler.i: src/api_handler.c.i
+.PHONY : src/api_handler.i
+
+# target to preprocess a source file
+src/api_handler.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/src/api_handler.c.i
+.PHONY : src/api_handler.c.i
+
+src/api_handler.s: src/api_handler.c.s
+.PHONY : src/api_handler.s
+
+# target to generate assembly for a file
+src/api_handler.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/src/api_handler.c.s
+.PHONY : src/api_handler.c.s
+
 src/engine.o: src/engine.c.o
 .PHONY : src/engine.o
 
@@ -152,6 +176,30 @@ src/engine.s: src/engine.c.s
 src/engine.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/src/engine.c.s
 .PHONY : src/engine.c.s
+
+src/http_server.o: src/http_server.c.o
+.PHONY : src/http_server.o
+
+# target to build an object file
+src/http_server.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/src/http_server.c.o
+.PHONY : src/http_server.c.o
+
+src/http_server.i: src/http_server.c.i
+.PHONY : src/http_server.i
+
+# target to preprocess a source file
+src/http_server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/src/http_server.c.i
+.PHONY : src/http_server.c.i
+
+src/http_server.s: src/http_server.c.s
+.PHONY : src/http_server.s
+
+# target to generate assembly for a file
+src/http_server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/src/http_server.c.s
+.PHONY : src/http_server.c.s
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -234,9 +282,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... minikv"
+	@echo "... src/api_handler.o"
+	@echo "... src/api_handler.i"
+	@echo "... src/api_handler.s"
 	@echo "... src/engine.o"
 	@echo "... src/engine.i"
 	@echo "... src/engine.s"
+	@echo "... src/http_server.o"
+	@echo "... src/http_server.i"
+	@echo "... src/http_server.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -10,4 +10,6 @@ add_executable(minikv
 	src/parser.c
 	src/engine.c
 	src/storage.c
+	src/http_server.c
+	src/api_handler.c
 )
