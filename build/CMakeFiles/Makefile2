@@ -54,16 +54,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/devuser/MiniKV
+CMAKE_SOURCE_DIR = /app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/devuser/MiniKV/build
+CMAKE_BINARY_DIR = /app/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/minikv.dir/all
+all: CMakeFiles/test_storage.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/minikv.dir/clean
+clean: CMakeFiles/test_storage.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,14 +83,14 @@ clean: CMakeFiles/minikv.dir/clean
 CMakeFiles/minikv.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/devuser/MiniKV/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target minikv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/app/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target minikv"
 .PHONY : CMakeFiles/minikv.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/minikv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/devuser/MiniKV/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /app/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/minikv.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/devuser/MiniKV/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /app/build/CMakeFiles 0
 .PHONY : CMakeFiles/minikv.dir/rule
 
 # Convenience name for target.
@@ -99,6 +101,32 @@ minikv: CMakeFiles/minikv.dir/rule
 CMakeFiles/minikv.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/clean
 .PHONY : CMakeFiles/minikv.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_storage.dir
+
+# All Build rule for target.
+CMakeFiles/test_storage.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/app/build/CMakeFiles --progress-num=8,9,10 "Built target test_storage"
+.PHONY : CMakeFiles/test_storage.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_storage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /app/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_storage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /app/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_storage.dir/rule
+
+# Convenience name for target.
+test_storage: CMakeFiles/test_storage.dir/rule
+.PHONY : test_storage
+
+# clean rule for target.
+CMakeFiles/test_storage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/clean
+.PHONY : CMakeFiles/test_storage.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

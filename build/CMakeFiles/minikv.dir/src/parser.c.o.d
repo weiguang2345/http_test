@@ -1,4 +1,4 @@
-CMakeFiles/minikv.dir/src/parser.c.o: /home/devuser/MiniKV/src/parser.c \
+CMakeFiles/minikv.dir/src/parser.c.o: /app/src/parser.c \
  /usr/include/stdc-predef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -25,4 +25,4 @@ CMakeFiles/minikv.dir/src/parser.c.o: /home/devuser/MiniKV/src/parser.c \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/devuser/MiniKV/src/../include/parser.h
+ /app/src/../include/parser.h

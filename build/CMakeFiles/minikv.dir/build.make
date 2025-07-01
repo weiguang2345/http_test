@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/devuser/MiniKV
+CMAKE_SOURCE_DIR = /app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/devuser/MiniKV/build
+CMAKE_BINARY_DIR = /app/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/minikv.dir/depend.make
@@ -70,88 +70,88 @@ include CMakeFiles/minikv.dir/progress.make
 include CMakeFiles/minikv.dir/flags.make
 
 CMakeFiles/minikv.dir/src/main.c.o: CMakeFiles/minikv.dir/flags.make
-CMakeFiles/minikv.dir/src/main.c.o: /home/devuser/MiniKV/src/main.c
+CMakeFiles/minikv.dir/src/main.c.o: /app/src/main.c
 CMakeFiles/minikv.dir/src/main.c.o: CMakeFiles/minikv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/devuser/MiniKV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/minikv.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/main.c.o -MF CMakeFiles/minikv.dir/src/main.c.o.d -o CMakeFiles/minikv.dir/src/main.c.o -c /home/devuser/MiniKV/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/minikv.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/main.c.o -MF CMakeFiles/minikv.dir/src/main.c.o.d -o CMakeFiles/minikv.dir/src/main.c.o -c /app/src/main.c
 
 CMakeFiles/minikv.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minikv.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/devuser/MiniKV/src/main.c > CMakeFiles/minikv.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /app/src/main.c > CMakeFiles/minikv.dir/src/main.c.i
 
 CMakeFiles/minikv.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minikv.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/devuser/MiniKV/src/main.c -o CMakeFiles/minikv.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /app/src/main.c -o CMakeFiles/minikv.dir/src/main.c.s
 
 CMakeFiles/minikv.dir/src/parser.c.o: CMakeFiles/minikv.dir/flags.make
-CMakeFiles/minikv.dir/src/parser.c.o: /home/devuser/MiniKV/src/parser.c
+CMakeFiles/minikv.dir/src/parser.c.o: /app/src/parser.c
 CMakeFiles/minikv.dir/src/parser.c.o: CMakeFiles/minikv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/devuser/MiniKV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/minikv.dir/src/parser.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/parser.c.o -MF CMakeFiles/minikv.dir/src/parser.c.o.d -o CMakeFiles/minikv.dir/src/parser.c.o -c /home/devuser/MiniKV/src/parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/minikv.dir/src/parser.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/parser.c.o -MF CMakeFiles/minikv.dir/src/parser.c.o.d -o CMakeFiles/minikv.dir/src/parser.c.o -c /app/src/parser.c
 
 CMakeFiles/minikv.dir/src/parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minikv.dir/src/parser.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/devuser/MiniKV/src/parser.c > CMakeFiles/minikv.dir/src/parser.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /app/src/parser.c > CMakeFiles/minikv.dir/src/parser.c.i
 
 CMakeFiles/minikv.dir/src/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minikv.dir/src/parser.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/devuser/MiniKV/src/parser.c -o CMakeFiles/minikv.dir/src/parser.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /app/src/parser.c -o CMakeFiles/minikv.dir/src/parser.c.s
 
 CMakeFiles/minikv.dir/src/engine.c.o: CMakeFiles/minikv.dir/flags.make
-CMakeFiles/minikv.dir/src/engine.c.o: /home/devuser/MiniKV/src/engine.c
+CMakeFiles/minikv.dir/src/engine.c.o: /app/src/engine.c
 CMakeFiles/minikv.dir/src/engine.c.o: CMakeFiles/minikv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/devuser/MiniKV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/minikv.dir/src/engine.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/engine.c.o -MF CMakeFiles/minikv.dir/src/engine.c.o.d -o CMakeFiles/minikv.dir/src/engine.c.o -c /home/devuser/MiniKV/src/engine.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/minikv.dir/src/engine.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/engine.c.o -MF CMakeFiles/minikv.dir/src/engine.c.o.d -o CMakeFiles/minikv.dir/src/engine.c.o -c /app/src/engine.c
 
 CMakeFiles/minikv.dir/src/engine.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minikv.dir/src/engine.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/devuser/MiniKV/src/engine.c > CMakeFiles/minikv.dir/src/engine.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /app/src/engine.c > CMakeFiles/minikv.dir/src/engine.c.i
 
 CMakeFiles/minikv.dir/src/engine.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minikv.dir/src/engine.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/devuser/MiniKV/src/engine.c -o CMakeFiles/minikv.dir/src/engine.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /app/src/engine.c -o CMakeFiles/minikv.dir/src/engine.c.s
 
 CMakeFiles/minikv.dir/src/storage.c.o: CMakeFiles/minikv.dir/flags.make
-CMakeFiles/minikv.dir/src/storage.c.o: /home/devuser/MiniKV/src/storage.c
+CMakeFiles/minikv.dir/src/storage.c.o: /app/src/storage.c
 CMakeFiles/minikv.dir/src/storage.c.o: CMakeFiles/minikv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/devuser/MiniKV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/minikv.dir/src/storage.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/storage.c.o -MF CMakeFiles/minikv.dir/src/storage.c.o.d -o CMakeFiles/minikv.dir/src/storage.c.o -c /home/devuser/MiniKV/src/storage.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/minikv.dir/src/storage.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/storage.c.o -MF CMakeFiles/minikv.dir/src/storage.c.o.d -o CMakeFiles/minikv.dir/src/storage.c.o -c /app/src/storage.c
 
 CMakeFiles/minikv.dir/src/storage.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minikv.dir/src/storage.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/devuser/MiniKV/src/storage.c > CMakeFiles/minikv.dir/src/storage.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /app/src/storage.c > CMakeFiles/minikv.dir/src/storage.c.i
 
 CMakeFiles/minikv.dir/src/storage.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minikv.dir/src/storage.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/devuser/MiniKV/src/storage.c -o CMakeFiles/minikv.dir/src/storage.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /app/src/storage.c -o CMakeFiles/minikv.dir/src/storage.c.s
 
 CMakeFiles/minikv.dir/src/http_server.c.o: CMakeFiles/minikv.dir/flags.make
-CMakeFiles/minikv.dir/src/http_server.c.o: /home/devuser/MiniKV/src/http_server.c
+CMakeFiles/minikv.dir/src/http_server.c.o: /app/src/http_server.c
 CMakeFiles/minikv.dir/src/http_server.c.o: CMakeFiles/minikv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/devuser/MiniKV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/minikv.dir/src/http_server.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/http_server.c.o -MF CMakeFiles/minikv.dir/src/http_server.c.o.d -o CMakeFiles/minikv.dir/src/http_server.c.o -c /home/devuser/MiniKV/src/http_server.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/minikv.dir/src/http_server.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/http_server.c.o -MF CMakeFiles/minikv.dir/src/http_server.c.o.d -o CMakeFiles/minikv.dir/src/http_server.c.o -c /app/src/http_server.c
 
 CMakeFiles/minikv.dir/src/http_server.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minikv.dir/src/http_server.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/devuser/MiniKV/src/http_server.c > CMakeFiles/minikv.dir/src/http_server.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /app/src/http_server.c > CMakeFiles/minikv.dir/src/http_server.c.i
 
 CMakeFiles/minikv.dir/src/http_server.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minikv.dir/src/http_server.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/devuser/MiniKV/src/http_server.c -o CMakeFiles/minikv.dir/src/http_server.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /app/src/http_server.c -o CMakeFiles/minikv.dir/src/http_server.c.s
 
 CMakeFiles/minikv.dir/src/api_handler.c.o: CMakeFiles/minikv.dir/flags.make
-CMakeFiles/minikv.dir/src/api_handler.c.o: /home/devuser/MiniKV/src/api_handler.c
+CMakeFiles/minikv.dir/src/api_handler.c.o: /app/src/api_handler.c
 CMakeFiles/minikv.dir/src/api_handler.c.o: CMakeFiles/minikv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/devuser/MiniKV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/minikv.dir/src/api_handler.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/api_handler.c.o -MF CMakeFiles/minikv.dir/src/api_handler.c.o.d -o CMakeFiles/minikv.dir/src/api_handler.c.o -c /home/devuser/MiniKV/src/api_handler.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/minikv.dir/src/api_handler.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/minikv.dir/src/api_handler.c.o -MF CMakeFiles/minikv.dir/src/api_handler.c.o.d -o CMakeFiles/minikv.dir/src/api_handler.c.o -c /app/src/api_handler.c
 
 CMakeFiles/minikv.dir/src/api_handler.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minikv.dir/src/api_handler.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/devuser/MiniKV/src/api_handler.c > CMakeFiles/minikv.dir/src/api_handler.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /app/src/api_handler.c > CMakeFiles/minikv.dir/src/api_handler.c.i
 
 CMakeFiles/minikv.dir/src/api_handler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minikv.dir/src/api_handler.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/devuser/MiniKV/src/api_handler.c -o CMakeFiles/minikv.dir/src/api_handler.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /app/src/api_handler.c -o CMakeFiles/minikv.dir/src/api_handler.c.s
 
 # Object files for target minikv
 minikv_OBJECTS = \
@@ -173,7 +173,7 @@ minikv: CMakeFiles/minikv.dir/src/http_server.c.o
 minikv: CMakeFiles/minikv.dir/src/api_handler.c.o
 minikv: CMakeFiles/minikv.dir/build.make
 minikv: CMakeFiles/minikv.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/devuser/MiniKV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable minikv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable minikv"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minikv.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -185,6 +185,6 @@ CMakeFiles/minikv.dir/clean:
 .PHONY : CMakeFiles/minikv.dir/clean
 
 CMakeFiles/minikv.dir/depend:
-	cd /home/devuser/MiniKV/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/devuser/MiniKV /home/devuser/MiniKV /home/devuser/MiniKV/build /home/devuser/MiniKV/build /home/devuser/MiniKV/build/CMakeFiles/minikv.dir/DependInfo.cmake --color=$(COLOR)
+	cd /app/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /app /app /app/build /app/build /app/build/CMakeFiles/minikv.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/minikv.dir/depend
 

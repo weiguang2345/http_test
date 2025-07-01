@@ -1,4 +1,4 @@
-CMakeFiles/minikv.dir/src/storage.c.o: /home/devuser/MiniKV/src/storage.c \
+CMakeFiles/minikv.dir/src/storage.c.o: /app/src/storage.c \
  /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -50,4 +50,4 @@ CMakeFiles/minikv.dir/src/storage.c.o: /home/devuser/MiniKV/src/storage.c \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /home/devuser/MiniKV/src/../include/storage.h
+ /app/src/../include/storage.h

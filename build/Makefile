@@ -57,13 +57,23 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/devuser/MiniKV
+CMAKE_SOURCE_DIR = /app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/devuser/MiniKV/build
+CMAKE_BINARY_DIR = /app/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -87,9 +97,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/devuser/MiniKV/build/CMakeFiles /home/devuser/MiniKV/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /app/build/CMakeFiles /app/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/devuser/MiniKV/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /app/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +138,19 @@ minikv: cmake_check_build_system
 minikv/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/build
 .PHONY : minikv/fast
+
+#=============================================================================
+# Target rules for targets named test_storage
+
+# Build rule for target.
+test_storage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_storage
+.PHONY : test_storage
+
+# fast build rule for target.
+test_storage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/build
+.PHONY : test_storage/fast
 
 src/api_handler.o: src/api_handler.c.o
 .PHONY : src/api_handler.o
@@ -255,6 +278,7 @@ src/storage.o: src/storage.c.o
 # target to build an object file
 src/storage.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/src/storage.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/src/storage.c.o
 .PHONY : src/storage.c.o
 
 src/storage.i: src/storage.c.i
@@ -263,6 +287,7 @@ src/storage.i: src/storage.c.i
 # target to preprocess a source file
 src/storage.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/src/storage.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/src/storage.c.i
 .PHONY : src/storage.c.i
 
 src/storage.s: src/storage.c.s
@@ -271,7 +296,32 @@ src/storage.s: src/storage.c.s
 # target to generate assembly for a file
 src/storage.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minikv.dir/build.make CMakeFiles/minikv.dir/src/storage.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/src/storage.c.s
 .PHONY : src/storage.c.s
+
+test/test_storage.o: test/test_storage.c.o
+.PHONY : test/test_storage.o
+
+# target to build an object file
+test/test_storage.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/test/test_storage.c.o
+.PHONY : test/test_storage.c.o
+
+test/test_storage.i: test/test_storage.c.i
+.PHONY : test/test_storage.i
+
+# target to preprocess a source file
+test/test_storage.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/test/test_storage.c.i
+.PHONY : test/test_storage.c.i
+
+test/test_storage.s: test/test_storage.c.s
+.PHONY : test/test_storage.s
+
+# target to generate assembly for a file
+test/test_storage.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_storage.dir/build.make CMakeFiles/test_storage.dir/test/test_storage.c.s
+.PHONY : test/test_storage.c.s
 
 # Help Target
 help:
@@ -281,7 +331,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... minikv"
+	@echo "... test_storage"
 	@echo "... src/api_handler.o"
 	@echo "... src/api_handler.i"
 	@echo "... src/api_handler.s"
@@ -300,6 +352,9 @@ help:
 	@echo "... src/storage.o"
 	@echo "... src/storage.i"
 	@echo "... src/storage.s"
+	@echo "... test/test_storage.o"
+	@echo "... test/test_storage.i"
+	@echo "... test/test_storage.s"
 .PHONY : help
 
 

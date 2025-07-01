@@ -1,6 +1,5 @@
-CMakeFiles/minikv.dir/src/http_server.c.o: \
- /home/devuser/MiniKV/src/http_server.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+CMakeFiles/minikv.dir/src/http_server.c.o: /app/src/http_server.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -76,9 +75,6 @@ CMakeFiles/minikv.dir/src/http_server.c.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
- /home/devuser/MiniKV/src/../include/http_server.h \
- /home/devuser/MiniKV/src/../include/storage.h \
- /home/devuser/MiniKV/src/../include/parser.h \
- /home/devuser/MiniKV/src/../include/engine.h \
- /home/devuser/MiniKV/src/../include/parser.h \
- /home/devuser/MiniKV/src/../include/api_handler.h
+ /app/src/../include/http_server.h /app/src/../include/storage.h \
+ /app/src/../include/parser.h /app/src/../include/engine.h \
+ /app/src/../include/parser.h /app/src/../include/api_handler.h

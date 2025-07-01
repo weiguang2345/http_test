@@ -1,4 +1,4 @@
-CMakeFiles/minikv.dir/src/main.c.o: /home/devuser/MiniKV/src/main.c \
+CMakeFiles/minikv.dir/src/main.c.o: /app/src/main.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -49,9 +49,7 @@ CMakeFiles/minikv.dir/src/main.c.o: /home/devuser/MiniKV/src/main.c \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h /home/devuser/MiniKV/src/../include/parser.h \
- /home/devuser/MiniKV/src/../include/engine.h \
- /home/devuser/MiniKV/src/../include/parser.h \
- /home/devuser/MiniKV/src/../include/storage.h \
- /home/devuser/MiniKV/src/../include/storage.h \
- /home/devuser/MiniKV/src/../include/http_server.h
+ /usr/include/strings.h /app/src/../include/parser.h \
+ /app/src/../include/engine.h /app/src/../include/parser.h \
+ /app/src/../include/storage.h /app/src/../include/storage.h \
+ /app/src/../include/http_server.h
