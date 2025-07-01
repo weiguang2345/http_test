@@ -1,0 +1,5 @@
+/home/devuser/MiniKV/buildtest/CMakeFiles/minikv.dir
+/home/devuser/MiniKV/buildtest/CMakeFiles/test_storage.dir
+/home/devuser/MiniKV/buildtest/CMakeFiles/test.dir
+/home/devuser/MiniKV/buildtest/CMakeFiles/edit_cache.dir
+/home/devuser/MiniKV/buildtest/CMakeFiles/rebuild_cache.dir
