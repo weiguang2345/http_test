@@ -11,7 +11,7 @@
 #include "../include/engine.h"
 #include "../include/api_handler.h"
 
-#define BUFFER_SIZE 1024
+#define BUFFER_SIZE 2048
 
 void handle_client(int client_sock,Storage* store){
 	char buffer[BUFFER_SIZE];
@@ -41,35 +41,36 @@ void handle_client(int client_sock,Storage* store){
 	}
 
 	char* body = strstr(buffer,"\r\n\r\n");
-	if(!body || strlen(body) < 4){
-		const char* msg = "{\"error\": \"Missing request body\"}";
-		char response[BUFFER_SIZE];
-		snprintf(response,sizeof(response),
-			"HTTP/1.0 400 Bad Request\r\n"
-			"Content_Type: application/json\r\n"
-			"content-Length: %zu\r\n"
-			"\r\n"
-			"%s",strlen(msg),msg);
-		write(client_sock,response,strlen(response));
-		close(client_sock);
-		return;
+	if(body){
+		body += 4;
+	} else {
+		body = "";
 	}
 
-	body += 4;
+	char msg[BUFFER_SIZE * 2];
+	memset(msg,0,sizeof(msg));
 
+	int is_full_http_response = 0;
 
-	char msg[BUFFER_SIZE];
 	handle_api_request(store,path,body,msg,sizeof(msg));
 
-	char response[BUFFER_SIZE * 2];
-	snprintf(response,sizeof(response),
-			"HTTP/1.0 200 OK\r\n"
-			"Content_Type: application/json\r\n"
-			"content-Length: %zu\r\n"
-			"\r\n"
-			"%s",strlen(msg),msg);
+	if(strncmp(msg,"HTTP/",5) == 0){
+		is_full_http_response = 1;
+	}
 
-	write(client_sock,response,strlen(response));
+	if(is_full_http_response){
+		write(client_sock,msg,strlen(msg));
+	} else {
+		char response[BUFFER_SIZE * 2];
+		snprintf(response,sizeof(response),
+				"HTTP/1.0 200 OK\r\n"
+				"Content_Type: application/json\r\n"
+				"content-Length: %zu\r\n"
+				"\r\n"
+				"%s",strlen(msg),msg);
+		write(client_sock,response,strlen(response));
+	}
+
 	close(client_sock);
 }
 
@@ -83,6 +84,9 @@ void http_server_start(Storage* store,int port){
 		perror("socket");
 		exit(1);
 	}
+
+	int reuse = 1;
+	setsockopt(server_sock,SOL_SOCKET,SO_REUSEADDR,&reuse,sizeof(reuse));
 
 	memset(&server_addr,0,sizeof(server_addr));
 	server_addr.sin_family = AF_INET;
